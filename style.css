@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    transition: 0.4s;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+h1 {
+    color: #2e7d32;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.antiScroll {
+    background: #fff3cd;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.category {
+    margin: 15px 0;
+}
+
+.catBtn {
+    padding: 6px 12px;
+    margin: 3px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: #ddd;
+}
+
+.catBtn.active {
+    background: #2e7d32;
+    color: white;
+}
+
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#startBtn {
+    background: #2e7d32;
+    color: white;
+}
+
+#resetBtn {
+    background: #d32f2f;
+    color: white;
+}
+
+#almostScrolledBtn {
+    background: #ff9800;
+    color: white;
+}
+
+.darkToggle {
+    background: #444;
+    color: white;
+}
+
+#timer {
+    font-size: 40px;
+    margin: 15px 0;
+    color: #1b5e20;
+}
+
+#streak {
+    color: #ff6f00;
+    margin-bottom: 10px;
+}
+
+/* Calendar */
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    margin: 15px auto;
+    max-width: 260px;
+}
+
+.day {
+    aspect-ratio: 1 / 1;
+    background: #e0e0e0;
+    border-radius: 4px;
+    position: relative;
+}
+
+.day.done {
+    background: #2e7d32;
+}
+
+.day.today {
+    border: 2px solid #ff9800;
+}
+
+.day span {
+    position: absolute;
+    bottom: 3px;
+    right: 4px;
+    font-size: 9px;
+}
+
+/* Dark Mode */
+
+body.dark {
+    background: #121212;
+}
+
+body.dark .container {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark select,
+body.dark input {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark .day {
+    background: #333;
+}
+
+body.dark .day.done {
+    background: #66bb6a;
+}
