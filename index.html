@@ -1,66 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>5 Minute Habits</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="manifest.json">
+
+<meta charset="UTF-8">
+<title>5 Minute Habits</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#2e7d32">
-    <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <h1>5 Minute Habits 🌱</h1>
-        <p class="subtitle">Small habits. Big change.</p>
+<h1>5 Minute Habits 🌱</h1>
+<p class="subtitle">Small habits. Big change.</p>
 
-        <!-- Anti Scroll Box -->
-        <div id="antiScrollBox" class="antiScroll">
-            <p>
-                You were about to scroll, right? 👀 <br>
-                Give yourself 5 minutes first.
-            </p>
-            <button id="startFocusBtn">🌱 Start 5 Minutes Instead</button>
-        </div>
+<div class="category">
 
-        <button id="almostScrolledBtn">📵 I almost scrolled...</button>
-        <p id="distractionCount"></p>
+<button class="catBtn active" data-cat="mind">Mind</button>
+<button class="catBtn" data-cat="body">Body</button>
+<button class="catBtn" data-cat="growth">Growth</button>
 
-        <!-- Categories -->
-        <div class="category">
-            <button class="catBtn active" data-cat="mind">Mind</button>
-            <button class="catBtn" data-cat="body">Body</button>
-            <button class="catBtn" data-cat="growth">Growth</button>
-        </div>
+</div>
 
-        <!-- Habit Select -->
-        <label for="habitSelect">Choose your 5 minute habit:</label>
-        <select id="habitSelect"></select>
+<label>Choose your 5 minute habit:</label>
 
-        <!-- Custom Habit -->
-        <input type="text" id="customHabit" placeholder="Add your own habit...">
-        <button id="addHabitBtn">Add Habit</button>
+<select id="habitSelect"></select>
 
-        <!-- Timer -->
-        <h2 id="timer">05:00</h2>
+<h2 id="timer">05:00</h2>
 
-        <!-- Streak -->
-        <h3 id="streak">Streak: 0 🔥</h3>
+<h3 id="streak">Streak: 0 🔥</h3>
 
-        <!-- Calendar -->
-        <h3>Progress Calendar 📅</h3>
-        <div id="calendar" class="calendar"></div>
+<h3>Progress Calendar 📅</h3>
 
-        <!-- Controls -->
-        <button id="startBtn">Start</button>
-        <button id="resetBtn">Reset</button>
+<div id="calendar" class="calendar"></div>
 
-        <!-- Dark Mode -->
-        <button id="darkModeToggle" class="darkToggle">🌙 Dark Mode</button>
+<button id="startBtn">Start</button>
+<button id="resetBtn">Reset</button>
 
-    </div>
+<button id="darkModeToggle">🌙 Dark Mode</button>
 
-    <script src="script.js"></script>
+<button id="installBtn" style="display:none">
+📲 Install App
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
